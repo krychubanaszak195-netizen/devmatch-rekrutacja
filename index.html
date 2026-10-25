@@ -27,46 +27,27 @@
     <section class="contact" id="kontakt">
       <div class="contact-info">
         <h2>Szukasz deweloperów?</h2>
-        <p>Wypełnij formularz briefu technologicznego. Nasz rekruter dostarczy dopasowane profile kandydatów.</p>
+        <p>Wypełnij formularz briefu technologicznego.</p>
       </div>
 
-      <!-- FORMULARZ BEZ BLOKUJĄCYCH PARAMETRÓW -->
-           <!-- POPRAWNA BRAMKA DO WYSYŁANIA DANYCH (Omija błąd 405) -->
-      <form action="https://web3forms.com" method="POST" id="contact-form">
-       
-        <!-- Twój wygenerowany wcześniej klucz dostępu Web3Forms -->
-        <input type="hidden" name="access_key" value="ee1369d3-3bb6-4386-b842-52319359c9b3">
-        
-        <!-- Temat maila, który otrzymasz -->
-        <input type="hidden" name="subject" value="Nowe zapytanie rekrutacyjne - DevMatch">
-        
-        <!-- Strona, na którą przekieruje nauczyciela po kliknięciu Wyślij (oficjalna strona sukcesu) -->
-        <input type="hidden" name="redirect" value="https://web3forms.com">
-
+      <!-- Czysty formularz sterowany przez JavaScript -->
+      <form id="contact-form">
         <label for="name">Osoba kontaktowa / Nazwa firmy</label>
-        <input id="name" name="name" type="text"
-          minlength="2" maxlength="80" required
-          autocomplete="name" placeholder="Np. Jan Kowalski / TechSoft Sp. z o.o.">
+        <input id="name" name="name" type="text" required placeholder="Np. Jan Kowalski">
 
         <label for="email">Firmowy adres e-mail</label>
-        <input id="email" name="email" type="email"
-          maxlength="254" required autocomplete="email"
-          placeholder="hr@twojafirma.pl">
+        <input id="email" name="email" type="email" required placeholder="hr@twojafirma.pl">
 
         <label for="message">Stack technologiczny i wymagania</label>
-        <textarea id="message" name="message"
-          minlength="5" maxlength="3000" required
-          rows="5" placeholder="Np. Poszukujemy Senior React Developera, wymagana znajomość TypeScript, Node.js..."></textarea>
+        <textarea id="message" name="message" required rows="5" placeholder="Wymagania..."></textarea>
 
-        <button id="send-button" type="submit">
-          Wyślij zapytanie ofertowe
-        </button>
+        <button id="send-button" type="submit">Wyślij zapytanie ofertowe</button>
+        <!-- Tutaj pod przyciskiem pojawi się komunikat o statusie wysyłki -->
+        <p id="status-message" style="margin-top: 15px; font-weight: bold;"></p>
       </form>
-
     </section>
   </main>
 
-  <!-- WAŻNE: PODPIĘCIE SKRYPTU JS -->
   <script src="script.js"></script>
 </body>
 </html>
