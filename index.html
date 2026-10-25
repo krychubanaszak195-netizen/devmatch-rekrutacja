@@ -12,18 +12,163 @@
     <nav>
       <a href="#o-nas">O nas</a>
       <a href="#specjalizacje">Stanowiska</a>
+      <a href="#proces">Proces</a>
       <a href="#kontakt">Pozyskaj talent</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO SECTION -->
     <section class="hero" id="o-nas">
-      <p class="eyebrow">&lt; TECH_RECRUITMENT &gt;</p>
-      <h1>Buduj zespoły IT<br>z najlepszych ekspertów.</h1>
-      <p class="intro">Łączymy doświadczonych programistów z innowacyjnymi firmami technologicznymi.</p>
-      <a class="button" href="#kontakt">Uruchom proces rekrutacji ↓</a>
+      <div class="hero-content">
+        <p class="eyebrow">&lt; TECH_RECRUITMENT &gt;</p>
+        <h1>Buduj zespoły IT<br>z najlepszych ekspertów.</h1>
+        <p class="intro">Łączymy doświadczonych programistów z innowacyjnymi firmami technologicznymi.</p>
+        <a class="button" href="#kontakt">Uruchom proces rekrutacji ↓</a>
+      </div>
     </section>
 
+    <!-- SEKCJA O FIRMIE -->
+    <section class="about-section">
+      <div class="section-header">
+        <p class="eyebrow">// WHO_WE_ARE</p>
+        <h2>O firmie DevMatch</h2>
+        <p class="section-desc">Jesteśmy nowoczesną agencją rekrutacyjną, która powstała z myślą o dynamicznie rozwijającym się rynku technologicznym. Nie jesteśmy zwykłymi rekruterami – nasi konsultanci posiadają zaplecze techniczne, dzięki czemu doskonale rozumiemy stack technologiczny naszych klientów oraz realne umiejętności kandydatów. Skutecznie łączymy pasję do technologii z biznesem.</p>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h2>98%</h2>
+          <p>Zadowolonych klientów</p>
+        </div>
+        <div class="stat-card">
+          <h2>10 dni</h2>
+          <p>Średni czas dostarczenia kandydata</p>
+        </div>
+        <div class="stat-card">
+          <h2>5000+</h2>
+          <p>Zweryfikowanych programistów w bazie</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROZBUDOWANA SEKCJA: OFEROWANE STANOWISKA -->
+    <section class="roles-section" id="specjalizacje">
+      <div class="section-header">
+        <p class="eyebrow">// WHAT_WE_DO</p>
+        <h2>Jakie stanowiska oferujemy?</h2>
+        <p class="section-desc">Prowadzimy zaawansowane projekty rekrutacyjne na kluczowe role techniczne i administracyjne.</p>
+      </div>
+
+      <div class="roles-grid">
+        <!-- Stanowisko 1 -->
+        <div class="role-card">
+          <div class="role-icon">&lt;backend&gt;</div>
+          <h3>Backend Developers</h3>
+          <p class="role-text">Inżynierowie odpowiedzialni za stabilną architekturę, bazy danych, logikę biznesową oraz wysoką wydajność systemów.</p>
+          <ul class="tech-tags">
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Go</li>
+          </ul>
+        </div>
+
+        <!-- Stanowisko 2 -->
+        <div class="role-card">
+          <div class="role-icon">{ visual }</div>
+          <h3>Frontend / Mobile</h3>
+          <p class="role-text">Eksperci od responsywnych interfejsów użytkownika, dbający o perfekcyjny UX, aplikacje mobilne oraz standardy webowe.</p>
+          <ul class="tech-tags">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Vue.js</li>
+            <li>Flutter</li>
+          </ul>
+        </div>
+
+        <!-- Stanowisko 3 -->
+        <div class="role-card">
+          <div class="role-icon">☁️ cloud</div>
+          <h3>DevOps & Cloud</h3>
+          <p class="role-text">Architekci chmurowi automatyzujący procesy wdrożeniowe (CI/CD) oraz dbający o pełne bezpieczeństwo infrastruktury.</p>
+          <ul class="tech-tags">
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+          </ul>
+        </div>
+
+        <!-- Stanowisko 4 -->
+        <div class="role-card">
+          <div class="role-icon">🔒 secure</div>
+          <h3>Cybersecurity Experts</h3>
+          <p class="role-text">Specjaliści zajmujący się audytami bezpieczeństwa, testami penetracyjnymi oraz ochroną danych przed cyberzagrożeniami.</p>
+          <ul class="tech-tags">
+            <li>Penetration Testing</li>
+            <li>SIEM</li>
+            <li>OWASP</li>
+            <li>ISO 27001</li>
+          </ul>
+        </div>
+
+        <!-- Stanowisko 5 -->
+        <div class="role-card">
+          <div class="role-icon">📊 data</div>
+          <h3>Data Science & AI</h3>
+          <p class="role-text">Analitycy oraz inżynierowie zajmujący się sztuczną inteligencją, uczeniem maszynowym (ML) i przetwarzaniem Big Data.</p>
+          <ul class="tech-tags">
+            <li>Python</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <!-- Stanowisko 6 -->
+        <div class="role-card">
+          <div class="role-icon">💼 admin</div>
+          <h3>IT Administration & PM</h3>
+          <p class="role-text">Kadra zarządzająca projektami technologicznymi oraz eksperci dbający o bieżące wsparcie operacyjne i biurowe.</p>
+          <ul class="tech-tags">
+            <li>Agile / Scrum</li>
+            <li>Project Management</li>
+            <li>IT Support</li>
+            <li>Office Admin</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEKCJA: PROCES WERYFIKACJI -->
+    <section class="process-section" id="proces">
+      <div class="section-header">
+        <p class="eyebrow">// METHODOLOGY</p>
+        <h2>Nasz proces weryfikacji</h2>
+        <p class="section-desc">Każdy kandydat zanim trafi do klienta przechodzi przez rygorystyczny proces techniczny i miękki.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h4>Weryfikacja CV i Profilu</h4>
+          <p>Sprawdzamy doświadczenie komercyjne oraz zrealizowane dotychczas projekty.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h4>Rozmowa Techniczna</h4>
+          <p>Nasi techniczni rekruterzy przeprowadzają szczegółowy screen umiejętności z danego stacku.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h4>Soft Skills Match</h4>
+          <p>Badamy umiejętności komunikacyjne, pracę w zespole oraz dopasowanie do kultury firmy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEKCJA KONTAKTOWA (Z PEŁNYM FORMULARZEM) -->
     <section class="contact" id="kontakt">
       <div class="contact-info">
         <h2>Szukasz deweloperów?</h2>
@@ -47,6 +192,11 @@
       </form>
     </section>
   </main>
+
+  <footer>
+    <p>© DevMatch · Profesjonalna Agencja Rekrutacji IT</p>
+    <p>Projekt szkolny: HTML · CSS · JavaScript via Web3Forms</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
